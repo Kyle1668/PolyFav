@@ -1,0 +1,56 @@
+body {
+    color: #253039;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+::selection {
+    color: #ecf0f1;
+    background: rgb(51, 51, 51);
+}
+
+.header {
+    color: white;
+    height: 200px;
+    padding-bottom: 50px;
+    background-color: indianred;
+}
+
+.login {
+    height: 500px;
+    padding: 70px 10px 50px;
+}
+
+.prompt {
+    margin-right: 50px;
+}
+
+.prompt-body {
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+.prompt-body h5 {
+    padding-top: 15px;
+}
+
+.prompt-body ul {
+    font-size: 25px;
+    padding-top: 18px;
+    list-style: circle;
+}
+
+.form-fields {
+    padding-top: 30px;
+}
+
+.form-fields .input-group {
+    padding-bottom: 40px;
+}
+
+.footer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: indianred;
+}

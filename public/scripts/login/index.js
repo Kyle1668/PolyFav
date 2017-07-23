@@ -19,6 +19,7 @@ function submit() {
 }
 
 $(document).ready(function() {
+
     $("#SubmitButton").click(function() {
         submit()
     });
@@ -26,4 +27,5 @@ $(document).ready(function() {
     $(".form-control").click(function() {
         clearErrorMessage();
     });
+    
 });

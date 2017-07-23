@@ -21,6 +21,10 @@ body {
     padding: 70px 10px 50px;
 }
 
+.login h1 {
+    color: indianred;
+}
+
 .prompt {
     margin-right: 50px;
 }
@@ -46,7 +50,7 @@ body {
 }
 
 .form-fields .input-group {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .error {

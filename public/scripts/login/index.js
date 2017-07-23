@@ -15,7 +15,13 @@ function submit() {
     var validUsernameInput = nameInput !== "";
     var passwordInput = $("#PasswordInput").val();
     var validPasswordInput = passwordInput !== "";
-    validUsernameInput && validPasswordInput ? location.href = 'app.html' : $("#SubmitButton").after(ERROR_MESSAGE);
+
+    if (validUsernameInput && validPasswordInput) {
+        location.href = 'app.html'
+    }
+    else if ($(".error").length === 0) {
+        $("#SubmitButton").after(ERROR_MESSAGE).fadeIn("slow");
+    }
 }
 
 $(document).ready(function() {
@@ -27,5 +33,5 @@ $(document).ready(function() {
     $(".form-control").click(function() {
         clearErrorMessage();
     });
-    
+
 });

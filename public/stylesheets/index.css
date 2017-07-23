@@ -48,6 +48,11 @@ body {
     padding-bottom: 40px;
 }
 
+.error {
+    color: indianred;
+    padding-left: 10px;
+}
+
 .footer {
     padding-top: 5px;
     padding-bottom: 5px;

@@ -1,7 +1,7 @@
 body {
     color: #253039;
-    background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+    font-family: Raleway;
 }
 
 ::selection {
@@ -41,6 +41,7 @@ body {
 }
 
 .form-fields {
+    width: 400px;
     padding-top: 30px;
 }
 

@@ -25,6 +25,11 @@ body {
     color: indianred;
 }
 
+#register {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
 .prompt {
     margin-right: 50px;
 }
@@ -56,6 +61,10 @@ body {
 .error {
     color: indianred;
     padding-left: 10px;
+}
+
+#submitbutton {
+    cursor: pointer;
 }
 
 .footer {

@@ -17,21 +17,46 @@ function submit() {
     var validPasswordInput = passwordInput !== "";
 
     if (validUsernameInput && validPasswordInput) {
-        location.href = 'app.html'
+        location.href = 'application.html'
     }
     else if ($(".error").length === 0) {
         $("#SubmitButton").after(ERROR_MESSAGE).fadeIn("slow");
     }
+
 }
 
 $(document).ready(function() {
 
-    $("#SubmitButton").click(function() {
+    var registerText = $("#register");
+    var inputForm = $(".form-control");
+    var submitButton = $("#SubmitButton");
+
+    registerText.hover(
+        function() {
+            // Focus
+            $("#register").css("color", "indianred");
+        },
+        function() {
+            // Blur
+            $("#register").css("color", "#777");
+        }
+    );
+
+    registerText.click(function() {
+        location.href = 'register.html'
+    });
+
+    submitButton.click(function() {
         submit()
     });
 
-    $(".form-control").click(function() {
+    inputForm.click(function() {
         clearErrorMessage();
+        registerText.fadeOut("slow");
+    });
+
+    inputForm.blur(function() {
+        registerText.fadeIn("slow");
     });
 
 });

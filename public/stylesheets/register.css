@@ -1,0 +1,26 @@
+body {
+    color: white;
+    background-color: indianred;
+}
+
+.header {
+    padding-top: 80px;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.header hr {
+    width: 500px;
+    margin-top: 50px;
+    border-top: 5px dotted white;
+}
+
+.registration {
+    margin-top: 50px;
+}
+
+.input-group {
+
+}

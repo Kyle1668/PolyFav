@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/register.css">
+
+    <title>PolyFav - Register</title>
 </head>
 <body>
-    <h1>register.html</h1>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Register</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="registration">
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-12">
+                   <div class="form-fields">
+
+                       <div class="input-group">
+                           <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+                           <input type="text" class="form-control" id="UserNameInput" placeholder="Username" aria-describedby="basic-addon1">
+                       </div>
+
+                       <div class="input-group">
+                           <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+                           <input type="text" class="form-control" id="PasswordInput" placeholder="Password" aria-describedby="basic-addon1">
+                       </div>
+
+                       <button type="button" class="btn btn-default" id="SubmitButton" aria-label="Left Align">
+                           Submit
+                           <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                       </button>
+
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="scripts/register/register.js"></script>
 </body>
 </html>

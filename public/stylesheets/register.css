@@ -3,6 +3,11 @@ body {
     background-color: indianred;
 }
 
+::selection {
+    color: #ecf0f1;
+    background: rgb(51, 51, 51);
+}
+
 .header {
     padding-top: 80px;
 }
@@ -17,10 +22,13 @@ body {
     border-top: 5px dotted white;
 }
 
-.registration {
-    margin-top: 50px;
+.input-group {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 500px;
 }
 
-.input-group {
-
+#SubmitButton {
+    margin: 40px;
 }

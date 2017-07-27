@@ -1,15 +1,19 @@
 
 function checkFields() {
+    // Checks
     return true
 }
 
 $(document).ready(function() {
 
-    $("#home").click(function() {
+    var homeReturnButton = $("#home");
+    var submitButton = $("#SubmitButton");
+
+    homeReturnButton.click(function() {
         location.href = 'index.html'
     });
 
-    $("#SubmitButton").click(function() {
+    submitButton.click(function() {
         if (checkFields()) {
             // Database Stuff
             location.href = 'index.html'

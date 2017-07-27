@@ -50,11 +50,11 @@ $(document).ready(function() {
 
     inputForm.click(function() {
         clearErrorMessage();
-        registerText.fadeOut("slow");
+        // registerText.fadeOut("slow");
     });
 
-    inputForm.blur(function() {
-        registerText.fadeIn("slow");
-    });
+    // inputForm.blur(function() {
+    //     registerText.fadeIn("slow");
+    // });
 
 });

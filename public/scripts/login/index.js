@@ -33,12 +33,10 @@ $(document).ready(function() {
 
     registerText.hover(
         function() {
-            // Focus
-            $("#register").css("color", "indianred");
+            registerText.css("color", "indianred");
         },
         function() {
-            // Blur
-            $("#register").css("color", "#777");
+            registerText.css("color", "#777");
         }
     );
 

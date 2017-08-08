@@ -1,11 +1,20 @@
 
 function checkFields() {
-    // Checks
-    return true
+    var isValidInput = true;
+
+    if ($("#UserNameInput").val() === "") {
+        isValidInput = false;
+    }
+
+    if (!confirmPassword()) {
+        isValidInput = false;
+    }
+
+    return isValidInput;
 }
 
 function confirmPassword() {
-
+    return $("#PasswordInput").val() === $("#ConfirmInput").val();
 }
 
 $(document).ready(function() {
@@ -24,6 +33,10 @@ $(document).ready(function() {
         }
         else {
             // Print Error
+            console.log("Invalid Input");
+            console.log($("#UserNameInput").val());
+            console.log($("#PasswordInput").val());
+            console.log($("#ConfirmInput").val());
         }
     });
 
@@ -40,7 +53,7 @@ $(document).ready(function() {
         newUser.password = $("#PasswordInput").val();
 
         function saveToDatabase(saveNewUser) {
-            socket.emit('printUser', saveNewUser);// (send request for user just sent, save the user to server);
+            socket.emit('printUser', saveNewUser); // (send request for user just sent, save the user to server);
          }
 
         saveToDatabase(newUser);

@@ -1,6 +1,6 @@
 
 function checkFields() {
-    var isValidInput = true;
+    let isValidInput = true;
 
     if ($("#UserNameInput").val() === "") {
         isValidInput = false;
@@ -18,45 +18,27 @@ function confirmPassword() {
 }
 
 function pushUser() {
-    var address = 'localhost';
-    var port = 3000;
-    var url = 'http://' + address + port;
+    let address = 'localhost';
+    let port = 3000;
+    let url = 'http://' + address + port;
 
-    // var socket = io(url);
-
-    var newUser = new User();
-
+    let newUser = new User();
     newUser.name = $("#UserNameInput").val();
     newUser.password = $("#PasswordInput").val();
-
-    // function saveToDatabase(saveNewUser) {
-    //     socket.emit('printUser', saveNewUser); // (send request for user just sent, save the user to server);
-    // }
-    //
-    // saveToDatabase(newUser);
-    //
-    // socket.on("connect", function () {
-    //     socket.emit("setUser", setUser)
-    // });
-    //
-    // socket.on("getUser", function (data) {
-    //     var returnData = new User(data.username, data.password);
-    //     returnData.printUser();
-    // });
 
     newUser.printUser();
 }
 
 $(document).ready(function() {
-    var homeReturnButton = $("#home");
-    var submitButton = $("#SubmitButton");
+    let homeReturnButton = $("#home");
+    let submitButton = $("#SubmitButton");
 
     homeReturnButton.click(function() {
         location.href = 'index.html'
     });
 
     $("input").click(function() {
-        var header = $(".header h1");
+        let header = $(".header h1");
         if (header.text() === "Invalid Name or Password") {
             header.text("Register");
         }

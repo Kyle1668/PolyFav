@@ -1,8 +1,8 @@
-var express = require("express");
-var io = require("socket.io")();
-var app = express();
+let express = require("express");
+let io = require("socket.io")();
+let app = express();
 
-var port = process.env.PORT || 3000;
+let port = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 
